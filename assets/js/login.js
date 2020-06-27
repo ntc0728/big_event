@@ -60,7 +60,6 @@ $(function () {
             if (res.status !== 0) {
                 return layer.msg(res.message)
             }
-            console.log('注册成功')
             layer.msg('注册成功，请登录！')
             // 模拟人的点击行为
             $('#link_login').click()
