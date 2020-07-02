@@ -44,6 +44,7 @@ $(function () {
     // 注册
     // 监听注册表单的提交事件
     $('#form_reg').on('submit', function (e) {
+        // 箭头函数里面是没有this的，往上一级作用域里查找
         // 1. 阻止默认的提交行为
         e.preventDefault()
         // 2. 发起Ajax的POST请求
